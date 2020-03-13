@@ -2,7 +2,7 @@
 We will perform Acceptance and Functional test cases on the Assigned Devices list in Profile Entity page.
 
 # Environment
-Test enviroment is the xFi staging site. The system supports:
+Test enviroment is the xFi staging site. The system supports access from:
 * Safari
 * Chrome
 * Firefox
