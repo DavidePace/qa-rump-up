@@ -1,12 +1,19 @@
 # Introduction
-We will perform Acceptance and Functional test cases on the profile entity page.
+We will perform Acceptance and Functional test cases on the Assigned Devices list in Profile Entity page.
 
 # Environment
-Test enviroment is the xFi staging site. Tests are performed on Linux machine using Firefox browser.
+Test enviroment is the xFi staging site. The system supports:
+* Safari
+* Chrome
+* Firefox
+* Microsoft Edge
+* Microsoft Edge Chromium
+* iOS
+* Android
 
 # Goals
 The goal of the test is to verify that the connection status of devices is correclty shown in the
-list of connected devices in profile entity page. We want to assure that a message under each device is correclty
+Assigned Devices lit in Profile Entity page. We want to assure that a message under each device is correclty
 shown depending on his connection status: if connected, the message has to communicate it, if not the last connected time
 has to be shown. We want to check if error situations are rightly reported in this message also.
 
@@ -18,7 +25,7 @@ We want to check if:
 * a message reporting last connected time is shown for every not connected device.
 * an error message is shown if an error occurs
 * an error is correctly logged and reported
-* the appearence of the list is correclty shown
+* the appearence of the Assigend Devices list is correclty shown
 
 We have also run Functional tests to verify the right behaviour of each function encountered.
 We want to assure:
@@ -33,11 +40,11 @@ For Acceptance tests we expect that (with respect to the goal list above):
   + "Last connected an hour ago"
   + "Last connected [x] hours ago"
   + "Last connected [MM/DD]"
-* a message "Can't determine last seen date" for a device that occurs to an error.
+* a message "Can't determine last seen date" for a device that occurs to an error
 * log an error event to Splunk and update our wikipage with error description
-* the list of devices is shown correctly
+* the Assigend Devices list is correctly shown
 
 For Functional tests we expect:
-* the correct functionality on devices card click.
+* the correct functionality on devices Card click.
 
 Every test is performed manually.
